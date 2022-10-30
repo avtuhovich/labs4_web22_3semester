@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="RUBY_MODULE" version="4">
+  <component name="ModuleRunConfigurationManager">
+    <shared />
+  </component>
+  <component name="NewModuleRootManager">
+    <content url="file://$MODULE_DIR$">
+      <sourceFolder url="file://$MODULE_DIR$/features" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/spec" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/test" isTestSource="true" />
+    </content>
+    <orderEntry type="jdk" jdkName="Remote: ruby-3.1.1-p18" jdkType="RUBY_SDK" />
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="library" scope="PROVIDED" name="bundler (v2.3.24, Remote: ruby-3.1.1-p18) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="dotenv (v2.8.1, Remote: ruby-3.1.1-p18) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="json (v2.6.2, Remote: ruby-3.1.1-p18) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="multi_json (v1.15.0, Remote: ruby-3.1.1-p18) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="mustermann (v3.0.0, Remote: ruby-3.1.1-p18) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="pg (v1.4.4, Remote: ruby-3.1.1-p18) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="rack (v2.2.4, Remote: ruby-3.1.1-p18) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="rack-protection (v3.0.2, Remote: ruby-3.1.1-p18) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="rackup (v0.1.0, Remote: ruby-3.1.1-p18) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="rake (v13.0.6, Remote: ruby-3.1.1-p18) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="sequel (v5.61.0, Remote: ruby-3.1.1-p18) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="sequel-seed (v1.1.2, Remote: ruby-3.1.1-p18) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="sinatra (v3.0.2, Remote: ruby-3.1.1-p18) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="sinatra-contrib (v3.0.2, Remote: ruby-3.1.1-p18) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="tilt (v2.0.11, Remote: ruby-3.1.1-p18) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="webrick (v1.7.0, Remote: ruby-3.1.1-p18) [gem]" level="application" />
+  </component>
+  <component name="RakeTasksCache">
+    <option name="myRootTask">
+      <RakeTaskImpl id="rake">
+        <subtasks>
+          <RakeTaskImpl id="db">
+            <subtasks>
+              <RakeTaskImpl description="Run migrations up to specified version or to latest" fullCommand="db:migrate[version]" id="migrate[version]" />
+              <RakeTaskImpl description="Perform migration reset (full rollback and migration)" fullCommand="db:reset" id="reset" />
+              <RakeTaskImpl description="Perform rollback to specified target or full rollback as default" fullCommand="db:rollback[target]" id="rollback[target]" />
+              <RakeTaskImpl description="Perform rollback to specified target or full rollback as default" fullCommand="db:seed" id="seed" />
+              <RakeTaskImpl description="Prints current schema version" fullCommand="db:version" id="version" />
+              <RakeTaskImpl description="" fullCommand="db:environment" id="environment" />
+              <RakeTaskImpl description="" fullCommand="db:migrate" id="migrate" />
+              <RakeTaskImpl description="" fullCommand="db:rollback" id="rollback" />
+            </subtasks>
+          </RakeTaskImpl>
+          <RakeTaskImpl description="Load environment settings from .env" fullCommand="dotenv" id="dotenv" />
+          <RakeTaskImpl description="" fullCommand="environment" id="environment" />
+        </subtasks>
+      </RakeTaskImpl>
+    </option>
+  </component>
+</module>
